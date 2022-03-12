@@ -1,28 +1,47 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
 \documentclass[openany, oneside]{book}
-%Packages Used-----------------------------------------------------
-\usepackage{color}
-\usepackage{hyperref}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{tabto}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
 
-\usepackage{booktabs}
+% AMS Math Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
 
+% Font
+\usepackage{mlmodern}
 
-\usepackage{nameref}
+% Misc. math packages
+\usepackage{siunitx}
+\usepackage{mathtools}
+\usepackage{diffcoeff}
+
+% Page Structure: Geometry, Titles, Headers and Footers
+\newlength{\alphabet}
+\settowidth{\alphabet}{\normalfont abcdefghijklmnopqrstuvwxyz}
 
 \usepackage{geometry}
 \geometry{
 	b5paper,
-	hmargin=20mm,
 	vmargin=15mm,
+	textwidth=2.6\alphabet,
 	includehead,
 	includefoot,
 %	showframe
 }
 
+\pagestyle{myheadings}
+\markright{}
+
+
+% Lists, Tables and Figures
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{lipsum}
+
+
+% Tikz and pgfplots
 \usepackage{tikz}
 \usetikzlibrary{
 	shapes.geometric,
@@ -31,31 +50,43 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 
-\usepackage{graphicx}
-\usepackage{siunitx}
 
-%End of Packages Used----------------------------------------------
+% Colors and Links
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=black,
+	linktoc=all
+}
+
+
+% Macros
+\newcommand{\numberthis}{\refstepcounter{equation}\tag{\theequation}}
+\newcommand{\dd}{\mathop{}\! d}
+\newcommand{\flatfrac}[2]{\ensuremath{#1/#2}}
+
+% Mathtools Macros
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
+
+
+
+% Document Begins
 \title{Mathematical Formulae\\\begin{large}
 A Book of High School and Engineering Common Core Mathematical Formulae
 \end{large}}
 \date{December, 2020}
 \author{Agnij Mallick}
 
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    urlcolor=black,
-    linktoc=all
-}
-
-
-\pagestyle{myheadings}
-\markright{}
-
 \begin{document}
-\frontmatter
 \maketitle
+\frontmatter
 
 \tableofcontents
 \newpage
@@ -111,7 +142,6 @@ A Book of High School and Engineering Common Core Mathematical Formulae
 \include{chapters/differential_equations.tex}
 \include{chapters/beta_gamma_functions.tex}
 \include{chapters/laplace_transformation.tex}
-
 
 \part{Operations Research}
 \include{chapters/linear_programming_problems.tex}

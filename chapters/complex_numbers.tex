@@ -2,63 +2,65 @@
 \section{Basic Formulae}
 For $z=x+iy$,
 \begin{align}
-	\lvert z \rvert=\sqrt{x^2+y^2}\\
-	\tan \theta=\frac{y}{x}\\
-	\bar{z}=x-iy
+	&\abs{z} = \sqrt{x^2+y^2}\\
+	&\tan \theta = \frac{y}{x}\\
+	&\bar{z} = x - iy
 \end{align}
 
 
 \section{Arithmetic Operation of Complex Number}
 For two complex numbers $z_1=x_1+iy_1$ and $z_2=x_2+iy_2$:
 \begin{align}
-	z_1+z_2=(x_1+x_2)+i(y_1+y_2)\\
-	z_1 z_2=(x_1x_2-y_1y_2)+i(x_1y_2+x_2y_1)\\
-	\lvert z_1z_2 \rvert=\lvert z_1 \rvert \lvert z_2 \rvert\\
-	\dfrac{z_1}{z_2}=\dfrac{(x_1x_2+y_1y_2)+i(x_2y_1-x_1y_2)}{{a_2}^2+{b_2}^2}\\
-	\lvert \dfrac{z_1}{z_2} \rvert=\dfrac{\lvert z_1 \rvert}{\lvert z_2 \rvert}
+	&z_1+z_2=(x_1+x_2)+i(y_1+y_2)\\
+	&z_1 \cdot z_2=(x_1x_2-y_1y_2)+i(x_1y_2+x_2y_1)\\
+	&\abs{z_1\cdot z_2} = \abs{z_1} \cdot \abs{z_2}\\
+	&\frac{z_1}{z_2}=\frac{(x_1x_2+y_1y_2)+i(x_2y_1-x_1y_2)}{{a_2}^2+{b_2}^2}\\
+	&\abs*{\frac{z_1}{z_2}} = \frac{\abs{z_1}}{\abs{z_2}}
 \end{align}
 
 
 \section{Euler's Formula}
-\begin{align}
-	z=re^{i\theta}\text{, where $r=\lvert z \rvert$, $e^{i\theta}=\cos \theta + i \sin \theta$, and $\theta=\tan^{-1}\frac{y}{x}$}
-\end{align}
+\begin{equation}
+	z=re^{i\theta}\text{, where $r= \abs{z}$, $e^{i\theta}=\cos \theta + i \sin \theta$, and $\theta=\tan^{-1}\frac{y}{x}$}
+\end{equation}
 
 
 \section{Trigonometric Ratios in Complex Form}
 \begin{align}
-	e^{i\theta}+e^{-i\theta}=2\cos\theta\\
-	\Rightarrow\cos \theta=\dfrac{e^{i\theta}+e^{-i\theta}}{2}\\
-	e^{i\theta}-e^{-i\theta}=2\sin\theta\\
-	\Rightarrow\sin \theta=\dfrac{e^{i\theta}-e^{-i\theta}}{2}
+	e^{i\theta}+e^{-i\theta} &= 2\cos\theta\\
+	\implies \cos \theta &= \frac{e^{i\theta}+e^{-i\theta}}{2}
+\end{align}
+\begin{align}
+	e^{i\theta}-e^{-i\theta} &= 2\sin\theta\\
+	\implies \sin \theta &= \frac{e^{i\theta}-e^{-i\theta}}{2}
 \end{align}
 
 
 \section{De Moivre's Formula}
-\begin{align}
-	(\cos\theta+i\sin\theta)^n=\cos (n\theta)+i\sin(n\theta)
-\end{align}
+\begin{equation}
+	(\cos\theta + i\sin\theta)^n = \cos(n\theta) + i\sin(n\theta)
+\end{equation}
 
 
 \section{Application of Euler's and De Moivre's Formula}
-For $z_1=\lvert r_1 \rvert e^{i\theta_1}$ and $z_2=\lvert r_2 \rvert e^{i\theta_2}$
+For $z_1 = r_1 e^{i\theta_1}$ and $z_2 = r_2 e^{i\theta_2}$
 \begin{align}
-	z_1z_2=r_1r_2e^{i(\theta_1+\theta_2)}
-	\dfrac{z_1}{z_2}=\dfrac{r_1}{r_2}e^{i(\theta_1-\theta_2)}
+	&z_1\cdot z_2 = r_1r_2 e^{i(\theta_1+\theta_2)}\\
+	&\frac{z_1}{z_2}=\frac{r_1}{r_2}e^{i(\theta_1-\theta_2)}
 \end{align}
 
 
 \section{Roots of Unity}
-\begin{align}
+\begin{equation}
 	\sqrt[n]{1}=e^{i\frac{2k\pi}{n}},\text{ where } k \in [0,n-1]
-\end{align}
+\end{equation}
 
 
 \section{Important Relations of Complex Numbers}
 \begin{align}
-	\lvert z_1+z_2\rvert \leq \lvert z_1 \rvert+\lvert z_2\rvert\\
-	\lvert z_1-z_2\rvert \leq \lvert z_1 \rvert+\lvert z_2\rvert\\
-	\lvert z_1-z_2\rvert \geq \lvert z_1 \rvert-\lvert z_2\rvert\\
-	\lvert z_1+z_2\rvert \geq \lvert \lvert z_1 \rvert-\lvert z_2\rvert\rvert\\
-	\lvert z_1+z_2 \rvert^2=2(\lvert z_1 \rvert^2+\lvert z_2 \rvert^2)
+	\abs{z_1+z_2} \leq \abs{z_1} +\abs{z_2}\\
+	\abs{z_1-z_2} \leq  \abs{z_1} + \abs{z_2}\\
+	\abs{z_1-z_2} \geq  \abs{z_1} - \abs{z_2}\\
+	\abs{z_1+z_2} \geq \abs{\abs{z_1} - \abs{z_2}}\\
+	\abs{z_1+z_2}^2 = 2(\abs{z_1}^2 + \abs{z_2}^2) % WTF? CHECK
 \end{align}
