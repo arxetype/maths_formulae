@@ -1,32 +1,41 @@
 \large{\chapter{Boolean Algebra}}
 Let $B$ be a set of $a,b,c$ with operations sum $(+)$ and product $(\cdot)$.\newline
 Then $B$ is said to belong to the Boolean Structure if the following conditions are satisfied:
-\begin{table}[H]
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{l l}
+		\toprule
+		Property & Name of Property\\
+		\midrule
+		$a+b \in B$ & \\
+		$a \cdot b \in B$ & Closure Property\\
+
+		\midrule[0.05pt]
+		$a+b=b+a$ &\\
+		$a \cdot b= b \cdot a$ & Associative Law\\
+
+		\midrule[0.05pt]
+		$a(b+c) = ab + ac $ & \\
+		$a+bc=(a+b)(a+c)$ & Commutative Law\\
+
+		\midrule[0.05pt]
+		$\lbrace 0,1 \rbrace \in B$ & \\
+		$a+0=a$ & \\
+		$a+1=1$ & \\
+		$a \cdot 0=0$ & \\
+		$a \cdot 1=a$ & Laws of $1$ and $0$\\
+
+		\midrule[0.05pt]
+		$a+ab=a$ & \\
+		$a(a+b)=a$ & Absorption Law\\
+
+		\midrule[0.1pt]
+		$(a+b)'=(a'b')$ & De Morgan's Law\\
+		\bottomrule
+	\end{tabular}
 	\caption{Properties of Boolean Algebraic Structure}
 	\label{boolean}
-	\begin{center}
-		\begin{tabular}{c|r}
-			Property&Name of Property\\
-			\hline
-			$a+b \in B$\\$a \cdot b \in B$&Closure Property\\
-			\hline
-			$a+b=b+a$\\
-			$a \cdot b= b \cdot a$&Associative Law\\
-			\hline
-			$a(b+c) = ab + ac $\\
-			$a+bc=(a+b)(a+c)$&Commutative Law\\
-			\hline
-			$\lbrace 0,1 \rbrace \in B$\\
-			$a+0=a$\\
-			$a+1=1$\\
-			$a \cdot 0=0$\\
-			$a \cdot 1=a$&Laws of $1$ and $0$\\
-			\hline
-			$a+ab=a$\\
-			$a(a+b)=a$&Absorption Law\\
-			\hline
-			$(a+b)'=(a'b')$&De'Morgan's Law
-		\end{tabular}
-	\end{center}
 \end{table}
+
+
 %End of Chapter--------------------------------------------------------------------------------------------
