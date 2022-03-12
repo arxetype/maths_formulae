@@ -11,12 +11,12 @@ The standard LPP problem has an objective function and conditions.
 		a_{m1} x_{1} + a_{m2} x_{2} + \cdots + a_{mn}x_n \leq b_m
 	\end{align*}
 \end{center}
-For a system with $n$ variables and $m$ conditions, the number of basic solutions are: ${n\choose k}$.
+For a system with $n$ variables and $m$ conditions, the number of basic solutions are: $\binom{n}{k}$.
 For any $n$ - $m$ system there are $n-m$ non-basic variables (NBV) and $m$ basic variables (BV).\\
 For the above system, the basic solutions are obtained by:\\
-\begin{table}[ht]
+\begin{table}[htbp]
 	\centering
-	\begin{tabular}{p{0.35\linewidth}  p{0.35\linewidth} p{0.3\linewidth} }
+	\begin{tabular}{p{0.3\linewidth}  p{0.3\linewidth} p{0.3\linewidth} }
 		\toprule
 		NBV & BV & BFS\\
 		\midrule
@@ -35,7 +35,7 @@ The optimal solution is always a extreme point. Thus, graphically:
 \tikzstyle{circ}=[draw, circle, fill=white, text width = 3 cm, text centered, minimum height = 1 cm]
 \tikzstyle{diam}=[draw, diamond, fill=white, text width = 2 cm, text centered]
 \tikzstyle{line}=[draw, -latex']
-\begin{figure}[h]
+\begin{figure}[htbp]
 	\begin{center}
 		\begin{tikzpicture}[node distance = 2 cm, auto]
 			\node [rect, rounded corners](step1){Start};
