@@ -25,11 +25,13 @@ The objective function is:
 	\Rightarrow \hat{\beta_0} &= \boxed{\bar{Y} - \hat{\beta_1} \bar{X}}
 \end{align*}
 
+
 \section{Sum of Squares Error}
 \begin{align}
 	TSS &= \sum_i (Y_i - \bar{Y})^2\\
 	& = \underbrace{\sum_i (\hat{Y_i}-\bar{Y})}_{\text{Explained Sum of Square Error (ESS)}} + \underbrace{\sum_i u_i^2}_{\text{Residual Sum of Squares Error (RSS)}}
 \end{align}
+
 \subsection{$R^2$: Coefficient of Determination}
 \begin{align}
 	R^2 &= \dfrac{\text{ESS}}{\text{TSS}}\\
@@ -40,25 +42,31 @@ For a regression analysis with single IV:
 \begin{align*}
 	\sqrt{R^2} = v
 \end{align*}
+
 \subsection{$\bar{R^2}$: Coefficient of Determination}
 \begin{align}
 	\bar{R^2}= 1 - \dfrac{\dfrac{\sum_i u_i^2}{(N-K-1)}}{\dfrac{\sum_i (Y_i-\bar{Y})^2}{(N-1)}}
 \end{align}
 where, $N$ is the number of observations and $K$ is the number of independent variables.
 
+
 \section{T-Test}
 Test for statistical significance of a single IV.
 \begin{align}
 	T = \dfrac{\hat{\beta_1}-0}{S_e(\hat{\beta_1})}
 \end{align}
+
+
 \section{F-Test}
 Test for statistical significance of all IVs together.
 \begin{align}
 	F = \dfrac{\dfrac{\text{ESS}}{(K-1)}}{\dfrac{\text{RSS}}{(N-K)}} \tag{$F \geq F_c, H_0$ is rejected}
 \end{align}
 
+
 \section{Test for Heteroskedasticity}
 \subsection{Definition} $\sigma_{\epsilon_i} \forall  \epsilon_i \in [X_a, X_b] = \sigma_{\epsilon_i} \forall  \epsilon_i \in [X_{b+1}, X_c]$
+
 \subsection{Durbin-Watson Test}
 \begin{align}
 	d_e = \dfrac{\sum_{t=2}^{n} (\hat{u_t}-\hat{u_{t-1}})^2}{\sum_{t=2}^{n} \hat{u_t}^2}

@@ -1,8 +1,10 @@
-\large{\chapter{Laplace Transformations}}
+\chapter{Laplace Transformations}
 The Laplace Transformation of a function $f(t)$ is defined as:
 \begin{equation}
 	F(s)=\mathcal{L} \lbrace f(t)\rbrace=\lim_{x\to\infty}\int_0^x e^{-st}f(t) dt
 \end{equation}
+
+
 \section{Basic Transformations}
 \begin{table}[htbp]
 	\centering
@@ -25,6 +27,7 @@ The Laplace Transformation of a function $f(t)$ is defined as:
 	\label{laplace}
 \end{table}
 
+
 \section{Important Relations}
 \begin{align}
 	\mathcal{L}\lbrace e^{at} f(t)\rbrace=F(s-a)\\
@@ -33,6 +36,7 @@ The Laplace Transformation of a function $f(t)$ is defined as:
 	\mathcal{L}\lbrace \dfrac{f(t)}{t} \rbrace=\lim_{x\to\infty} \int_s^x F(u) du\\
 	\mathcal{L}\lbrace \dfrac{f(t)}{t^n} \rbrace=\lim_{x\to\infty} \int_1\int_2\cdots{\int_s^x}_n F(u) du\cdots du
 \end{align}
+
 
 \section{Convolution}
 For two functions $f(t)$ and $g(t)$ be given such that their Laplace transforms are $F(s)$ and $G(s)$, then:
@@ -44,6 +48,7 @@ where $f(t) \star g(t)$ is defined as:
 	\int_0^t f(u)g(t-u)du
 \end{equation}
 
+
 \section{Laplace Transforms of Differentials}
 If the Laplace Transform of $f(t)$ is $F(s)$\footnote{Used in initial value problems}:
 \begin{align}
@@ -52,5 +57,3 @@ If the Laplace Transform of $f(t)$ is $F(s)$\footnote{Used in initial value prob
 	&\vdots\nonumber\\
 	\mathcal{L}\lbrace f^n(t) \rbrace & = s^n F(s)-[\sum_{i=0}^{n-1}s^{n-i}y^i(0)]
 \end{align}
-
-%End of Chapter---------------------------------------------------------------------------------

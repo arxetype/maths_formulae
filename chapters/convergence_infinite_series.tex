@@ -1,7 +1,15 @@
-\large{\chapter{Test of Convergence of Infinite Series}}
+\chapter{Test of Convergence of Infinite Series}
 If $a_1,a_2,a_3,...,a_n$ is a sequence by $a_n$ and their sum of series is $S_n$, then the following apply.
+
+
 \section{Definition}
-If \begin{equation}\lim_{n\to\infty} S_n=l\nonumber\end{equation} where $l$ is a finite value, the series $S_n$ is said to converge. A non-convergent series is called a divergent series.
+If
+\begin{equation}
+	\lim_{n\to\infty} S_n=l\nonumber
+\end{equation}
+where $l$ is a finite value, the series $S_n$ is said to converge. A non-convergent series is called a divergent series.
+
+
 \section{Tests of Convergence}
 \subsection{Comparison Test}
 If $u_n$ and $v_n$ are two positive series, then:
@@ -19,7 +27,11 @@ If $u_n$ and $v_n$ are two positive series, then:
 \end{enumerate}
 
 \subsection{Limit Form}
-If \begin{equation}\lim_{x\to\infty} \dfrac{u_n}{v_n} = l \nonumber\end{equation} where $l$ is a finite quantity $\neq0$, then $u_n$ and $v_n$ converge and diverge together.
+If
+\begin{equation}
+	\lim_{x\to\infty} \dfrac{u_n}{v_n} = l \nonumber
+\end{equation}
+where $l$ is a finite quantity $\neq0$, then $u_n$ and $v_n$ converge and diverge together.
 
 \subsection{Integral Test or Maclaurin-Cauchy Test}
 For a series
@@ -31,14 +43,14 @@ will only converge if the improper integral
 	\int_{N}^{\infty} f(x) dx
 \end{equation}
 is finite.
-\paragraph{}
+
 If the improper integral is finite, the upper and lower limit of the infinite series is given by:
 \begin{equation}
 	\int_{N}^{\infty} f(x) dx \leq \sum_{i=N}^{\infty} f(x) \leq f(N)+\int_{N}^{\infty} f(x) dx
 \end{equation}
+
 \subsection{Ratio Test}
 If, for two series $\sum u_n$ and $\sum v_n$:
-
 \begin{enumerate}
 	\item \begin{enumerate}
 		\item $\sum v_n$ converges
@@ -89,4 +101,3 @@ If, for two series $\sum u_n$ and $\sum v_n$:
 	\item series diverges for $\kappa>1$
 	\item test fails for $\kappa=1$
 \end{itemize}
-%End of Chapter-----------------------------------------------------------------------------------
