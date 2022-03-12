@@ -1,0 +1,55 @@
+\large{\chapter{Multiple Integrals}}
+\section{Two Variables}
+For
+\begin{equation}
+	I=\iint_R f(x,y) dxdy
+\end{equation}
+The following substitution are made:
+\begin{align}
+	x=g(r,\theta)\\
+	y=h(r,\theta)
+\end{align}
+\begin{equation}
+	\therefore dx dy=\lvert J \rvert dr d\theta
+\end{equation}
+Where $J$ is the Jacobian, defined as:
+\begin{equation}
+	J=\begin{vmatrix}
+		\dfrac{\delta x}{\delta r}&\dfrac{\delta y}{\delta r}\\
+		\dfrac{\delta x}{\delta \theta}&\dfrac{\delta y}{\delta \theta}
+	\end{vmatrix}
+\end{equation}
+
+The equivalent integral is:
+\begin{equation}
+	I=\iint_{R_1} f(g(r,\theta),h(r,\theta))\lvert J \rvert drd\theta
+\end{equation}
+
+\section{Three Variables}
+For
+\begin{equation}
+	I=\iiint_R f(x,y,z) dxdydz
+\end{equation}
+The following substitution are made:
+\begin{align}
+	x=g(r,\theta,\phi)\\
+	y=h(r,\theta,\phi)\\
+	z=k(r,\theta,\phi)
+\end{align}
+\begin{equation}
+	\therefore dx dy dz=\lvert J \rvert dr d\theta d\phi
+\end{equation}
+Where $J$ is the Jacobian, defined as:
+\begin{equation}
+	J=\begin{vmatrix}
+		\dfrac{\delta x}{\delta r}&\dfrac{\delta y}{\delta r}&\dfrac{\delta z}{\delta r}\\
+		\dfrac{\delta x}{\delta \theta}&\dfrac{\delta y}{\delta \theta}&\dfrac{\delta z}{\delta \theta}\\
+		\dfrac{\delta x}{\delta \phi}&\dfrac{\delta y}{\delta \phi}&\dfrac{\delta z}{\delta \phi}
+	\end{vmatrix}
+\end{equation}
+
+The equivalent integral is:
+\begin{equation}
+	I=\iiint_{R_1} f(g(r,\theta,\phi),h(r,\theta,\phi),k(r,\theta,\phi))\lvert J \rvert dr d\theta d\phi
+\end{equation}
+% End of Chapter--------------------------------------------------------------------------------

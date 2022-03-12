@@ -1,0 +1,68 @@
+\chapter{Reduction Formulae}
+\begin{equation}
+	\begin{aligned}
+		\begin{split}
+			\int \sin^n x dx &=&-\dfrac{1}{n}\sin^{n-1} x\cos x dx+&\\
+			& &\dfrac{n-1}{n}\int \sin^{n-2} x dx\\
+		\end{split}
+	\end{aligned}
+\end{equation}
+
+\begin{equation}
+	\begin{aligned}
+		\begin{split}
+			\int \cos^n x dx&=&-\dfrac{1}{n}\cos^{n-1} x\sin x dx+&\\
+			& &\dfrac{n-1}{n}\int \cos^{n-2} x dx\\
+		\end{split}
+	\end{aligned}
+\end{equation}
+\begin{equation}
+	\int_0^{\frac{\pi}{2}} \sin^n x dx=\int_0^{\frac{\pi}{2}} \cos^n x dx=\begin{cases}\dfrac{(n-1)\cdot(n-3)\cdots 3\cdot1}{n\cdot(n-2)\cdots 4\cdot 2}\left(\dfrac{\pi}{2}\right), n\rightarrow \text{even}\\
+		\dfrac{(n-1)\cdot(n-3)\cdots 4\cdot2}{n\cdot(n-2)\cdots 3\cdot 1}, n\rightarrow \text{odd} \end{cases}\\
+\end{equation}
+
+\begin{equation}
+	\int \sin^m x\cos^n x dx=\dfrac{-\sin^{m-1} x\cos^{n+1} x}{m+n}+\dfrac{m-1}{m+n}\int \sin^{m-2} x\cos^n x dx
+\end{equation}\newpage
+
+For $I(m,n)=\int_0^{\frac{\pi}{2}} \sin^m x\cos^n x dx$:\newline
+When $m$ and $n$ are both even:
+\begin{equation}
+	I(m,n)=\dfrac{[(m-1).(m-3)\cdots 3.1][(n-1).(n-3)\cdots 3.1]}{(m+n).(m+n-1)\cdots(4).(2)}\cdot\dfrac{\pi}{2}
+\end{equation}
+
+Otherwise:
+\begin{equation}
+	I(m,n)=\dfrac{[(m-1).(m-3)\cdots (2\text{ or }1)][(n-1).(n-3)\cdots ()(2\text{ or }1)]}{(m+n).(m+n-1)\cdots(2\text{ or }1))}
+\end{equation}
+
+\begin{align}
+	I_n=\int \tan^n x dx\nonumber\\
+	\Rightarrow I_n=\dfrac{\tan^{n-2} x}{n-1}-I_{n-2}
+\end{align}
+
+\begin{align}
+	I_n=\int \cot^n x dx\nonumber\\
+	\Rightarrow I_n=-\dfrac{\cot^{n-2} x}{n-1}-I_{n-2}
+\end{align}
+
+\begin{align}
+	I_n=\int \sec^n x dx\nonumber\\
+	\Rightarrow I_n=\dfrac{\sec^{n-2}x\tan x}{n-1}+\dfrac{n-2}{n-1}I_{n-2}
+\end{align}
+
+\begin{align}
+	I_n=\int \csc^n x dx\nonumber\\
+	\Rightarrow I_n=-\dfrac{\csc^{n-2}x\cot x}{n-1}+\dfrac{n-2}{n-1}I_{n-2}
+\end{align}
+
+\begin{align}
+	I_n=\int x^n e^{ax} dx\\
+	\int x^n e^{ax} dx=\dfrac{x^n e^{ax}}{a}-\dfrac{n}{a}I_{n-2}
+\end{align}
+
+\begin{align}
+	I(m,n)=\int x^m (\ln x)^n dx\\
+	\int x^m (\ln x)^n dx=\dfrac{x^{m+1}}{m+1}(\ln x)^n-\dfrac{n}{m+1}I_{m,n-1}
+\end{align}
+%End of Chapter------------------------------------------------------------

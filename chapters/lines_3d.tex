@@ -1,0 +1,71 @@
+\large{\chapter{Line in 3-D Space}}
+For a line which is defined as $\vec{a}=a\hat{i}+b\hat{j}+c\hat{k}$:
+\begin{enumerate}
+	\item Line numbers of the line is
+	\begin{equation}
+		<a,b,c>
+	\end{equation}
+	\item The line cosines are:
+	\begin{align}
+		<\dfrac{a}{\sqrt{a^2+b^2+c^2}},\dfrac{b}{\sqrt{a^2+b^2+c^2}},\dfrac{c}{\sqrt{a^2+b^2+c^2}}>\\
+		=<l,m,n>
+	\end{align}
+\end{enumerate}
+
+\section{Angle between Two Lines\newline}
+\begin{align}
+	\cos \theta	=\dfrac{a_1a_2+b_1b_2+b_1b_2}{\sqrt{a_1^2+b_1^2+c_1^2}\sqrt{a_2^2+b_2^2+c_2^2}}\\
+	\Rightarrow \cos \theta= l_1l_2+m_1m_2+n_1n_2
+\end{align}
+When two lines are $\perp, l_1l_2+m_1m_2+n_1n_2=0$.\newline
+When two lines are $\parallel \dfrac{l_1}{l_2}=\dfrac{m_1}{m_2}=\dfrac{n_1}{n_2}=1$.
+
+\section{Skew and Co-planar Lines}
+Let there be two lines $\vec{r_1}$ and $\vec{r_2}$,
+\begin{equation}
+	\begin{split}
+		\vec{r_1}=\vec{a_1}+\mu \vec{b_1} & \vec{r_2}=\vec{a_2}+\lambda \vec{b_2}
+	\end{split}
+\end{equation}
+
+\section{Distances}
+\subsection{The shortest distance between $r_1$ and $r_2$\newline}
+\begin{equation}
+	S=\left\lvert \dfrac{(\vec{a_1}-\vec{a_2})\cdot (\vec{b_1}\times\vec{b_2})}{\lvert \vec{b_1}\times\vec{b_2} \rvert}\right\rvert
+\end{equation}
+If $S=0$, the lines intersect.
+
+\subsection{Cartesian Form\newline}
+For two lines defined as $\dfrac{x-x_1}{a_1}=\dfrac{y-y_1}{b_1}=\dfrac{z-z_1}{c_1}$ and $\dfrac{x-x_2}{a_2}=\dfrac{y-y_2}{b_2}=\dfrac{z-z_2}{c_2}$:
+\begin{equation}
+	S=\begin{vmatrix}
+		x_2-x_1&y_2-y_1&z_2-z_1\\
+		a_1&b_1&c_1\\
+		a_2&b_2&c_2
+	\end{vmatrix}
+\end{equation}
+
+\subsection{Distance Between Parallel Lines\newline}
+\begin{equation}
+	S=\left| \dfrac{\vec{b}\cdot(\vec{a_2}-\vec{a_1})}{\lvert \vec{b} \rvert} \right|
+\end{equation}
+
+\subsection{Distance of a Point to a Line\newline}
+For a point, $(x_1,y_1,z_1)$ the distance to a line $\dfrac{x-\alpha}{l}=\dfrac{y-\beta}{m}=\dfrac{z-\gamma}{n}$:
+\begin{equation}
+	S=\left(
+	\begin{vmatrix}
+		x_1-\alpha&y_1-\beta\\
+		l&m
+	\end{vmatrix}+
+	\begin{vmatrix}
+		y_1-\beta&z_1-\gamma\\
+		m&n
+	\end{vmatrix}+
+	\begin{vmatrix}
+		z_1-\gamma&x_1-\alpha\\
+		n&l
+	\end{vmatrix}
+	\right)^{\dfrac{1}{2}}
+\end{equation}
+%End of Chapter-------------------------------------------------------------------------------

@@ -1,0 +1,21 @@
+\large{\chapter{Partial Derivative}}
+If $f(x,y)$ is a function of $(x,y)$, then $\dfrac{\delta f(x,y)}{\delta x}$ is the differentiation of $f(x,y)$ w.r.t. $x$, keeping all other parameters constant.
+\section{Chain Rule}
+If $f$ is a function of $u$ and $v$, which are functions of $x$ and $y$, then:
+\begin{equation}
+	\dfrac{\delta f}{\delta x}=\dfrac{\delta f}{\delta u}\dfrac{\delta u}{\delta x}+\dfrac{\delta f}{\delta v}\dfrac{\delta v}{\delta x}
+\end{equation}
+\begin{equation}
+	\dfrac{\delta f}{\delta y}=\dfrac{\delta f}{\delta u}\dfrac{\delta u}{\delta y}+\dfrac{\delta f}{\delta v}\dfrac{\delta v}{\delta y}
+\end{equation}
+If $f$ is a function of $x$ and $y$, which are functions of $t$, then:
+\begin{equation}
+	\dfrac{df}{dt}=\dfrac{\delta f}{\delta x}\dfrac{dx}{dt}+\dfrac{\delta f}{\delta y}\dfrac{dy}{dt}
+\end{equation}
+
+\section{Euler's Theorem}
+For a homogeneous function \footnote{Homogeneous functions are defined as $f(ax,ay)=a^\kappa f(x,y)$, where $\kappa$ is the degree of homogeneity.\newline E.g. $f(x,y)=x^2+y^2$, then $f(tx,ty)=t^2(x^2+y^2$), and the degree of homogeneity is $2$.}, $f(x_i)$ of degree $n$:
+\begin{equation}
+	\sum x_i\dfrac{\delta f}{\delta x_i}=nf(x_i)
+\end{equation}
+%End of Chapter-------------------------------------------------------------

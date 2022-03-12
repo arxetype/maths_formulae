@@ -1,0 +1,44 @@
+\large{\chapter{Binomial Theorem}}
+For a binomial expansion $(a+b)^n$, there are $(n+1)$ terms and $(a+b+c)^n$ has $\dfrac{(n+1)(n+2)}{2}$ terms.
+\section{Expansion of a binomial expression\newline}
+\begin{eqnarray}
+	\begin{aligned}
+		\begin{split}
+			(a+b)^n= & ^nC_0 a^n b^0+^nC_1 a^{n-1} b^1+^nC_2 a^{n-2} b^2+ & \\ & \cdots+^nC_n a^0 b^n\text{ }\forall n \in \mathbb{N} & \\ & =\sum_{i=0}^{n} {^nC_{i}} a^{n-i} b^i\text{ }\forall n \in \mathbb{N}
+		\end{split}
+	\end{aligned}\\
+	\begin{aligned}
+		\begin{split}
+			(a+b)^n= & a^n b^0+na^{n-1}b+\dfrac{n(n-1)}{2!}a^{n-2}b^2 & \\ & +\cdots+\dfrac{n(n-1)\cdots3\cdot2\cdot1}{n!} a^0 b^n+\cdots\infty \text{ }\forall n \in \mathbb{R}
+		\end{split}
+	\end{aligned}
+\end{eqnarray}
+
+\section{Trinomial Expansion}
+For $(a+b+c)^n$:
+\begin{equation}
+	\begin{split}
+		(a+b+c+)^n=\sum \dfrac{n!}{i! j! k!} a^i b^j c^k & \\ & \forall\text{ }(i+j+k)=n\text{; }i,j,k,n \in \mathbb{N}
+	\end{split}
+\end{equation}
+
+\section{Properties of Coefficients}
+\begin{equation}
+	\text{Sum of Co-efficients: }C_0+C_1+C_2+\cdots+C_{n-1}+C_n=2^n
+\end{equation}
+\begin{equation}
+	\text{Sum of Odd Co-efficients: }C_0+C_2+C_4+\cdots+C_{2n-3}+C_{2n-1}=2^{n-1}
+\end{equation}
+\begin{equation}
+	C_0-C_1+C_2-\cdots+C_{2n-1}-C_{2n}=0
+\end{equation}
+
+
+
+
+\section{Pascal's Rule}
+For $1 \leq k \leq n$ and  $k,n \in \mathbb{N}$:
+\begin{equation}
+	{{n}\choose{k}}+{{n}\choose{k-1}} ={{n+1}\choose{k}}
+\end{equation}
+%End of Chapter--------------------------------------------------------------------------------------------------------------
